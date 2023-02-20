@@ -20,7 +20,7 @@ declare class PromiseWorker {
    */
   public postMessage<TResult = any, TInput = any>(
     userMessage: TInput,
-    transferList: any[]
+    transferList?: any[]
   ): Promise<TResult>;
 }
 
